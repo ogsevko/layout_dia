@@ -1,4 +1,7 @@
 /*Colors*/
+/*Logo*/
+/*Miscellaneous*/
+/*Lists*/
 h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 400; }
@@ -160,8 +163,8 @@ body {
     z-index: 2;
     background: #ff9c8e;
     visibility: hidden;
-    position: fixed;
-    top: 0; }
+    position: absolute;
+    top: -50px; }
     .mobile__container.active {
       visibility: visible; }
   .mobile__list {
@@ -417,7 +420,7 @@ body {
 
 @media screen and (max-width: 1150px) {
   .about {
-    padding: 0 40px; } }
+    padding: 20px 40px; } }
 
 .expertise {
   min-height: 759px;
@@ -641,7 +644,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 75px; } }
+    padding: 25px 20px; } }
 
 @media screen and (max-width: 600px) {
   .process__cards {
@@ -874,6 +877,8 @@ body {
   background-color: #fff;
   min-height: 888px; }
   .vision__content {
+    position: relative;
+    z-index: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -889,8 +894,7 @@ body {
             align-items: center;
     max-width: 1600px;
     min-height: 691px;
-    margin: 0 auto;
-    position: relative; }
+    margin: 0 auto; }
   .vision__heading {
     font-weight: 600;
     font-size: 52px;
@@ -906,35 +910,80 @@ body {
   .vision__button {
     width: 226px;
     height: 56px;
-    padding: 15px 90px 18px; }
+    padding: 15px 90px; }
 
-.oval, .oval-large, .oval-medium {
+@media screen and (max-width: 1150px) {
+  .vision {
+    padding: 20px; } }
+
+.oval, .oval-large, .oval-medium, .oval-small, .oval-tiny {
+  position: absolute;
+  z-index: -1;
   opacity: 0.5;
-  border: 5px solid;
+  border: 3px solid;
   border-radius: 500px;
   -webkit-transform: rotate(-65.1deg);
-          transform: rotate(-65.1deg);
-  background-color: #fff;
-  position: absolute; }
+          transform: rotate(-65.1deg); }
   .oval-large {
-    width: 8.94vw;
-    height: 5.23vh; }
+    width: 8.9vw;
+    height: 5.2vh; }
   .oval-medium {
-    width: 5.35vw;
-    height: 3.13vh; }
+    width: 5.3vw;
+    height: 3.1vh; }
   .oval-small {
-    width: 2.83vw;
-    height: 1.66vh; }
-  .oval_blue {
-    border-color: #56ccf2; }
-  .oval_brown {
-    border-color: #ff9c8e; }
-  .oval_green {
-    border-color: #15d850; }
-  .oval_yellow {
-    border-color: #fcc91d; }
-  .oval_violet {
+    width: 4.2vw;
+    height: 2.5vh; }
+  .oval-tiny {
+    width: 2.8vw;
+    height: 1.6vh; }
+  .oval_type-1 {
+    top: 53%;
+    left: 5%;
+    border-color: #008aff; }
+  .oval_type-2 {
+    top: 75%;
+    left: 8%;
     border-color: #e58af7; }
+  .oval_type-3 {
+    top: 10%;
+    left: 15%;
+    border-color: #ff9c8e; }
+  .oval_type-4 {
+    top: 41%;
+    left: 17%;
+    border-color: #15d850; }
+  .oval_type-5 {
+    top: 11%;
+    left: 28%;
+    border-color: #fcc91d; }
+  .oval_type-6 {
+    top: 67%;
+    left: 30%;
+    border-color: #fcc91d; }
+  .oval_type-7 {
+    top: 74%;
+    left: 63%;
+    border-color: #e58af7; }
+  .oval_type-8 {
+    top: 56%;
+    left: 76%;
+    border-color: #ff9c8e; }
+  .oval_type-9 {
+    top: 19%;
+    left: 79%;
+    border-color: #15d850; }
+  .oval_type-10 {
+    top: 65%;
+    left: 83%;
+    border-color: #008aff; }
+  .oval_type-11 {
+    top: 16%;
+    left: 90%;
+    border-color: #e58af7; }
+  .oval_type-12 {
+    top: 40%;
+    left: 92%;
+    border-color: #fcc91d; }
 
 .contact {
   background: #008aff;
@@ -1045,16 +1094,22 @@ body {
               filter: brightness(0.2) sepia(1) hue-rotate(180deg) saturate(5); }
 
 @media screen and (max-width: 1150px) {
-  .contact__content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  .contact__input {
-    width: 250px; } }
+  .contact {
+    padding: 20px; }
+    .contact__content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .contact__heading {
+      max-width: 250px; }
+    .contact__item {
+      width: 200px; }
+    .contact__input {
+      width: 250px; } }
 
 .footer {
   height: 180px;
@@ -1083,7 +1138,8 @@ body {
           box-sizing: border-box; }
 
 html {
-  font-size: 13px; }
+  font-size: 13px;
+  scroll-behavior: smooth; }
 
 body {
   background: #f0f9ff; }
