@@ -814,9 +814,11 @@ body {
       background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0)));
       background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
       border-radius: 500px;
+      -webkit-transform: rotate(-60deg);
+              transform: rotate(-60deg);
       z-index: -1;
-      -webkit-transform: translateX(-45px) rotate(-60deg);
-              transform: translateX(-45px) rotate(-60deg); }
+      top: 0;
+      left: -44px; }
     .person__photo::after, .person__photo-blue::after, .person__photo-yellow::after, .person__photo-red::after {
       content: "";
       position: absolute;
@@ -825,13 +827,15 @@ body {
       background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0)));
       background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
       border-radius: 500px;
+      -webkit-transform: rotate(-60deg);
+              transform: rotate(-60deg);
       z-index: -1;
-      -webkit-transform: translate(-90px, 80px) rotate(-60deg);
-              transform: translate(-90px, 80px) rotate(-60deg); }
+      right: -44px;
+      bottom: 0; }
     .person__photo-blue::before, .person__photo-blue::after {
       background-color: #56ccf2; }
     .person__photo-yellow::before, .person__photo-yellow::after {
-      background-color: #fcc304; }
+      background-color: #fcc91d; }
     .person__photo-red::before, .person__photo-red::after {
       background-color: #f25656; }
   .person__img {
